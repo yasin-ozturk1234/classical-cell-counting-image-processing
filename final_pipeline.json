@@ -1,0 +1,39 @@
+{
+    "pipeline_name": "Pipeline A",
+    "selection_criterion": "Lowest validation MAE",
+    "validation_metrics": {
+        "MAE": 1.6,
+        "RMSE": 2.0,
+        "Bias": 0.0,
+        "mean_time_seconds": 0.1024
+    },
+    "steps": {
+        "grayscale": true,
+        "contrast_stretching": {
+            "lower_percentile": 1,
+            "upper_percentile": 99
+        },
+        "gaussian_blur": {
+            "kernel_size": [
+                5,
+                5
+            ],
+            "sigma": 0
+        },
+        "segmentation": {
+            "method": "fixed_threshold",
+            "threshold": 50
+        },
+        "morphology": {
+            "operation": "closing",
+            "kernel_size": [
+                5,
+                5
+            ]
+        },
+        "connected_components": {
+            "connectivity": 8,
+            "minimum_area": 20
+        }
+    }
+}

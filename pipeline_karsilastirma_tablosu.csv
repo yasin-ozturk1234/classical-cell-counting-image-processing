@@ -1,0 +1,4 @@
+Pipeline,Islem_Sirasi,Parametreler,Development_MAE,Validation_MAE,Validation_RMSE,Validation_Bias,Validation_Ortalama_Sure,Secildi
+Pipeline A,Grayscale -> Contrast Stretching -> Gaussian Blur -> Fixed Threshold -> Closing -> CCL,"Percentile 1-99; Gaussian 5x5; threshold 50; Closing 5x5; CCL connectivity 8, min area 20",3.9,1.6,2.0,0.0,0.1024,Evet
+Pipeline B,Grayscale -> CLAHE -> Median Filter -> Otsu -> Closing -> CCL,"CLAHE clipLimit 2.0, tile 8x8; Median 3x3; Closing 5x5; CCL min area 20",3.6,3.8,4.2661,-2.6,0.0471,Hayır
+Pipeline C,Grayscale -> Gaussian Blur -> Otsu -> Opening -> Closing -> CCL,Gaussian 3x3; Opening 3x3; Closing 3x3; CCL min area 20,8.4,4.6,6.0498,-1.4,0.0233,Hayır

@@ -1,0 +1,12 @@
+{
+    "method": "Otsu Thresholding + Connected Component Labeling",
+    "thresholding": {
+        "method": "Otsu",
+        "type": "Binary"
+    },
+    "connected_components": {
+        "connectivity": 8,
+        "minimum_area": 20
+    },
+    "prediction_rule": "Count components with area >= 20"
+}

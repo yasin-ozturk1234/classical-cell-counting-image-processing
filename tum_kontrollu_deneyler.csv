@@ -1,0 +1,20 @@
+Deney_ID,Yontem,Ortalama_Tahmin,Ortalama_Gercek,MAE,Deney_Grubu,Yogunluk_Donusumu,Filtre,Segmentasyon,Morfoloji,Parametreler
+EXP-01,Orijinal,35.3,22.4,13.7,Yoğunluk Dönüşümü,Orijinal görüntü,—,—,—,Ek parametre yok
+EXP-02,Contrast Stretching,26.7,22.4,5.9,Yoğunluk Dönüşümü,Contrast Stretching,—,—,—,"Alt yüzde 1, üst yüzde 99"
+EXP-03,Histogram Equalization,1587.4,22.4,1565.0,Yoğunluk Dönüşümü,Histogram Equalization,—,—,—,Histogram eşitleme
+EXP-04,CLAHE,27.7,22.4,6.7,Yoğunluk Dönüşümü,CLAHE,—,—,—,"clipLimit=2.0, tileGridSize=8x8"
+EXP-05,Orijinal,35.3,22.4,13.7,Filtreleme,—,Filtre uygulanmadı,—,—,—
+EXP-06,Gaussian 3x3,32.6,22.4,12.6,Filtreleme,—,Gaussian Blur,—,—,Kernel 3x3
+EXP-07,Gaussian 5x5,28.1,22.4,9.5,Filtreleme,—,Gaussian Blur,—,—,Kernel 5x5
+EXP-08,Median 3x3,36.0,22.4,13.6,Filtreleme,—,Median Filter,—,—,Kernel 3x3
+EXP-09,Sharpening,50.7,22.4,28.3,Filtreleme,—,Sharpening,—,—,Keskinleştirme çekirdeği
+EXP-10,Fixed Threshold,24.4,22.4,7.0,Segmentasyon,—,—,Fixed Threshold,—,Eşik=50
+EXP-11,Otsu Threshold,35.3,22.4,13.7,Segmentasyon,—,—,Otsu Threshold,—,Otomatik eşik
+EXP-12,Adaptive Threshold,109.7,22.4,87.3,Segmentasyon,—,—,Adaptive Gaussian Threshold,—,"blockSize=51, C=2"
+EXP-13,Closing 5x5,22.9,22.4,4.7,Morfoloji,—,—,—,Closing,Kernel 5x5
+EXP-14,Opening -> Closing,24.9,22.4,5.9,Morfoloji,—,—,—,Opening -> Closing,Her iki işlem için kernel 3x3
+EXP-15,Orijinal,24.4,22.4,7.0,Morfoloji,—,—,—,Morfolojik işlem yok,—
+EXP-16,Closing 3x3,20.5,22.4,7.3,Morfoloji,—,—,—,Closing,Kernel 3x3
+EXP-17,Opening 5x5,15.2,22.4,7.4,Morfoloji,—,—,—,Opening,Kernel 5x5
+EXP-18,Closing -> Opening,21.1,22.4,7.9,Morfoloji,—,—,—,Closing -> Opening,Her iki işlem için kernel 3x3
+EXP-19,Opening 3x3,34.0,22.4,13.2,Morfoloji,—,—,—,Opening,Kernel 3x3
